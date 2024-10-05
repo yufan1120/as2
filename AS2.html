@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁範例</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js">
+    <style>
+        /* Banner 樣式 */
+        .banner-div {
+            height: 100vh;
+            background-color: #ff5733;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* 內容樣式 */
+        .content-div {
+            padding: 2rem;
+            min-height: calc(200vh - 8rem);
+        }
+
+        /* 左右兩側留白 */
+        .content-padding {
+            padding: 0 2rem;
+        }
+
+        /* 區段內容背景色 */
+        .section-bg {
+            background-color: #f0f0f0;
+        }
+
+        /* 非常淺的顏色 */
+        .content-bg {
+            background-color: #dcdcdc;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        /* 添加圓角 */
+    </style>
+</head>
+
+<body>
+    <!-- 頁面Banner -->
+    <div class="bg-info text-white text-center py-5">
+        <h1>這裡是Banner</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">首頁</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#section1">區段1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section2">區段2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section3">區段3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 區段1 -->
+    <section id="section1" class="py-5">
+        <div class="banner-div">
+            <h2>區段1 Banner</h2>
+        </div>
+        <div class="content-div section-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 content-padding">
+                        <div class="content-bg">
+                            <h3>區段1 內容</h3>
+                            <p>這是區段1的內容。Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in libero nec dolor luctus bibendum.</p>
+                            <p>Quisque vel quam nec massa dictum varius ac eu urna. Suspendisse ut tristique ex.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 區段2 -->
+    <section id="section2" class="py-5">
+        <div class="banner-div">
+            <h2>區段2 Banner</h2>
+        </div>
+        <div class="content-div section-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 content-padding">
+                        <div class="content-bg">
+                            <h3>區段2 內容</h3>
+                            <p>這是區段2的內容。Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in libero nec dolor luctus bibendum.</p>
+                            <p>Quisque vel quam nec massa dictum varius ac eu urna. Suspendisse ut tristique ex.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 區段3 -->
+    <section id="section3" class="py-5">
+        <div class="banner-div">
+            <h2>區段3 Banner</h2>
+        </div>
+        <div class="content-div section-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 content-padding">
+                        <div class="content-bg">
+                            <h3>區段3 內容</h3>
+                            <p>這是區段3的內容。Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in libero nec dolor luctus bibendum.</p>
+                            <p>Quisque vel quam nec massa dictum varius ac eu urna. Suspendisse ut tristique ex.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <!-- JavaScript 平滑滾動 -->
+    <script src="script.js"></script>
+</body>
+
+</html>
